@@ -46,6 +46,7 @@ def get_store(name):
     return {"message": "Store not found"}, 404
 
 
+
 @app.get("/store/<string:name>/item")
 def get_item_in_store(name):
     for store in stores:
@@ -53,5 +54,5 @@ def get_item_in_store(name):
             return {"items": store["items"]}
     return {"message": "Store not found"}, 404
 
-
+@app
    
