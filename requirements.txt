@@ -1,4 +1,4 @@
-# libraries
+# libraries the project depend on
 flask
 flask-smorest
 python-dotenv
