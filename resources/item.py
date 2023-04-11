@@ -37,7 +37,7 @@ class Item(MethodView):
             item = items[item_id]
 
             # https://blog.teclado.com/python-dictionary-merge-update-operators/
-            item |= item_data
+            item |= item_data # |= means to update the item 
 
             return item
         except KeyError:
@@ -52,8 +52,8 @@ class ItemList(MethodView):
     def post(self):
         item_data = request.get_json()
         # Here not only we need to validate data exists,
-        # But also what type of data. Price should be a float,
-        # for example.
+        # But also what type of data. Price should be a float,for example.
+        # if this part is error handling, for to check the item exists or not.
         if (
             "price" not in item_data
             or "store_id" not in item_data
@@ -73,5 +73,6 @@ class ItemList(MethodView):
         item_id = uuid.uuid4().hex
         item = {**item_data, "id": item_id}
         items[item_id] = item
-
+        # save the item_id to a dictionary
+        # place it in our items dictionary
         return item
