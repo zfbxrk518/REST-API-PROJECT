@@ -15,7 +15,7 @@ app.config["OPENAPI_URL_PREFIX"] = "/"
 app.config["OPENAPI_SWAGGER_UI_PATH"] = "/swagger-ui"
 app.config["OPENAPI_SWAGGER_UI_URL"] = "https://cdn.jsdelivr.net/npm/swagger-ui-dist/"
 
-api = Api(app)
+api = Api(app) # connects the flask-smorest extension to the flask app
 
 api.register_blueprint(ItemBlueprint)
 api.register_blueprint(StoreBlueprint)
