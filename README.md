@@ -10,7 +10,7 @@ Nothing here yet!
 
         ```
           docker build -t flask-smorest-api .
-          
+
           docker run -dp 5000:5000 -w /app -v "/c/Documents/yourproject:/app" flask-smorest-api
          ```
 
@@ -19,3 +19,19 @@ Nothing here yet!
  **insomnia：**
  
           **url** -> {{url}} 
+
+** Blueprint**: 
+
+          divide an API into multiple segements.
+
+**MethodView:**
+
+          create a class whose methods route to specific endpoints.
+
+**Swagger page:**
+
+          localhost:5005/swagger-ui
+
+**marshMallow:**
+
+          use to do data validation.
