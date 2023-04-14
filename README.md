@@ -17,11 +17,9 @@ Nothing here yet!
 
          After running these two codes, you can close the terminal and the project will update automatically.
 
- **insomnia：**
- 
-          **url** -> {{url}} 
+**insomnia:**  **url** -> {{url}} 
 
-** Blueprint**: 
+**Blueprint:**
 
           divide an API into multiple segements.
 
