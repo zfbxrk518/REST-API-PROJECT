@@ -6,9 +6,7 @@ Nothing here yet!
 
 ###4.12
 
- **docker:**
-
-        ```
+ **docker:**```
         docker build -t flask-smorest-api .
         
         ```
@@ -19,18 +17,10 @@ Nothing here yet!
 
 **insomnia:**  **url** -> {{url}} 
 
-**Blueprint:**
+**Blueprint:** divide an API into multiple segements.
 
-          divide an API into multiple segements.
+**MethodView:**create a class whose methods route to specific endpoints.
 
-**MethodView:**
+**Swagger page:**localhost:5005/swagger-ui
 
-          create a class whose methods route to specific endpoints.
-
-**Swagger page:**
-
-          localhost:5005/swagger-ui
-
-**marshMallow:**
-
-          use to do data validation.
+**marshMallow:**use to do data validation.
