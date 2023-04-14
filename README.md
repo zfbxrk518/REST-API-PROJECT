@@ -6,13 +6,10 @@ Nothing here yet!
 
 ### 4.12
 
- **docker:** `docker build -t flask-smorest-api .
-        
-        ```
-        docker run -dp 5000:5000 -w /app -v "/c/Documents/yourproject:/app" flask-smorest-api
+ **docker:** After running these two codes, you can close the terminal and the project will update automatically.`docker build -t flask-smorest-api . docker run -dp 5000:5000 -w /app -v "/c/Documents/yourproject:/app" flask-smorest-api
         
 
-         After running these two codes, you can close the terminal and the project will update automatically.
+         
 
 **insomnia:**  **url** -> {{url}} 
 
