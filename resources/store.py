@@ -29,7 +29,10 @@ class Store(MethodView):
         # except KeyError:
         #     abort(404, message = "Store not found")
         store = StoreModel.query.get_or_404(store_id)
-        raise NotImplementedError("Deleting a store is not implemented.")
+        # raise NotImplementedError("Deleting a store is not implemented.")
+        db.session.delete(store)
+        db.session.commit()
+        return {"message": "Store deleted"}, 200
 
 
 
@@ -37,7 +40,7 @@ class Store(MethodView):
 class StoreList(MethodView):
     @blp.response(200, StoreSchema(many=True))
     def get(self):
-        return stores.values() 
+        return StoreModel.query.all()
     
     @blp.arguments(StoreSchema)
     @blp.response(201, StoreSchema)
