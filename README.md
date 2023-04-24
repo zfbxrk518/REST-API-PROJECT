@@ -1,7 +1,8 @@
 # REST APIs Recording Project
 
 
-妈蛋终于搞明白了vs code里的代码和github repository的先后顺序，也创建了repository。终于开始要同步了！要有绿色了！
+妈蛋终于搞明白了vs code里的代码和github repository的先后顺序，也创建了repository。终于开始要同步了！要有绿色了！忘记记录开始的日期了妈蛋！
+要保持每天更新！今天尝试一下就提交一次是什么样子。
 
 ### 4.12
 
@@ -12,6 +13,8 @@ docker build -t flask-smorest-api .
  ```
  docker run -dp 5000:5000 -w /app -v "/c/Documents/yourproject:/app" flask-smorest-api
  ```
+
+
         
         
          
