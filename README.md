@@ -13,6 +13,7 @@ docker build -t flask-smorest-api .
  docker run -dp 5000:5000 -w /app -v "/c/Documents/yourproject:/app" flask-smorest-api
  ```
         
+        
          
 
 **insomnia:**  **url** -> {{url}} 
