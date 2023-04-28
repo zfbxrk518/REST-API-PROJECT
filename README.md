@@ -11,14 +11,16 @@
 
 **一共只有7天，我觉得我做不完，怎么办。。。**
 
-**要不然从明天晚上开始做吧，🍐考完试以后，或者明天早上，但是万一他没过，呸呸呸，🍐一定会过！！！！！我要做好后勤**
+**要不然从🍐考完试以后，或者🍐考试的早上开始做吧，但是万一他没过，呸呸呸，🍐一定会过！！！！！我要做好后勤**
 
-**之间的部分为什么不加粗**
+***之间的部分为什么不加粗**
+
+**🍐把网页全关了，作业还没写完，还好提前保存了一部分，哎，不能说，不能说，等他考完试以后再说**
 
 
 ### 4.12
 
- **docker:** After running these two codes, you can close the terminal and the project will update automatically.
+ **dockber:** After running these two codes, you can close the terminal and the project will update automatically.
 ```
 docker build -t flask-smorest-api . 
 ```
