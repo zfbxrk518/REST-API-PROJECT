@@ -29,10 +29,10 @@ class Store(MethodView):
         # except KeyError:
         #     abort(404, message = "Store not found")
         store = StoreModel.query.get_or_404(store_id)
-        # raise NotImplementedError("Deleting a store is not implemented.")
-        db.session.delete(store)
-        db.session.commit()
-        return {"message": "Store deleted"}, 200
+        raise NotImplementedError("Deleting a store is not implemented.")
+        # db.session.delete(store)
+        # db.session.commit()
+        # return {"message": "Store deleted"}, 200
 
 
 
