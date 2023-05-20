@@ -67,4 +67,6 @@ class TagAndItemSchema(Schema):
 class UserSchema(Schema):
     id = fields.Int(dump_only=True)
     username = fields.Str(required=True)
-    password = fields.Str(required=True, load_only=True)
+    password = fields.Str(required=True, load_only=True) 
+    # remove "load_only=True", I can see the hashed password in insomina. 
+    # with it, the passord part would not show in insomina
