@@ -93,7 +93,7 @@ class Item(MethodView):
         if not jwt.get("is_admin"):
             abort(401, message="Admin privilege required.")
 
-            
+
         item = ItemModel.query.get_or_404(item_id)
         # raise NotImplementedError("Deleting an item is not implemented.")
         db.session.delete(item)
@@ -123,7 +123,7 @@ class ItemList(MethodView):
     def get(self):
         return ItemModel.query.all()
 
-    @jwt_required()
+    @jwt_required(fresh=True)
     @blp.arguments(ItemSchema)
     @blp.response(201, ItemSchema)
     def post(self, item_data):
