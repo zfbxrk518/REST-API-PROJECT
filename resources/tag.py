@@ -15,7 +15,7 @@ class TagsInStore(MethodView):
     def get(self, store_id):
         store = StoreModel.query.get_or_404(store_id)
 
-        return store.tags.all()
+        return store.tags.all()  # lazy="dynamic" means 'tags' is a query
 
     @blp.arguments(TagSchema)
     @blp.response(201, TagSchema)
@@ -35,7 +35,8 @@ class TagsInStore(MethodView):
             )
 
         return tag
-    
+
+
 @blp.route("/item/<int:item_id>/tag/<int:tag_id>")
 class LinkTagsToItem(MethodView):
     @blp.response(201, TagSchema)
@@ -69,14 +70,13 @@ class LinkTagsToItem(MethodView):
         return {"message": "Item removed from tag", "item": item, "tag": tag}
 
 
-
 @blp.route("/tag/<int:tag_id>")
 class Tag(MethodView):
     @blp.response(200, TagSchema)
     def get(self, tag_id):
         tag = TagModel.query.get_or_404(tag_id)
         return tag
-    
+
     @blp.response(
         202,
         description="Deletes a tag if no item is tagged with it.",
@@ -96,5 +96,5 @@ class Tag(MethodView):
             return {"message": "Tag deleted."}
         abort(
             400,
-            message="Could not delete tag. Make sure tag is not associated with any items, then try again.",
+            message="Could not delete tag. Make sure tag is not associated with any items, then try again.",  # noqa: E501
         )
