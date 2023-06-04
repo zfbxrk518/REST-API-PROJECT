@@ -13,3 +13,4 @@ python-dotenv
 sqlalchemy
 flask-sqlalchemy
 flask-jWT-extended
+gunicorn
