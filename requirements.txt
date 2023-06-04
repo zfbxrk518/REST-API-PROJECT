@@ -1,10 +1,15 @@
 # libraries the project depend on
+# Flask-JWT-Extended
+# Flask-Smorest
+# Flask-SQLAlchemy
+# passlib
+# marshmallow
+# python-dotenv
+# gunicorn
+
 flask
-flask-smorest
+flask-Smorest
 python-dotenv
 sqlalchemy
 flask-sqlalchemy
-flask-jwt-extended
-passlib
-flask-migrate
-gunicorn
+flask-jWT-extended
