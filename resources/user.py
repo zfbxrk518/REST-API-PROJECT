@@ -6,18 +6,18 @@ from flask_jwt_extended import create_access_token, create_refresh_token, get_jw
 from db import db
 from models import UserModel
 from schemas import UserSchema
-#from blocklist import BLOCKLIST
+from blocklist import BLOCKLIST
 
 
 blp = Blueprint("Users", "users", description="Operations on users")
 
-# @blp.route("/logout")
-# class UserLogout(MethodView):
-#     @jwt_required()
-#     def post(self):
-#         jti = get_jwt()["jti"]
-#         BLOCKLIST.add(jti)
-#         return {"message": "Successfully logged out"}, 200
+@blp.route("/logout")
+class UserLogout(MethodView):
+    @jwt_required()
+    def post(self):
+        jti = get_jwt()["jti"]
+        BLOCKLIST.add(jti)
+        return {"message": "Successfully logged out"}, 200
 
 @blp.route("/register")
 class UserRegister(MethodView):
