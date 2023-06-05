@@ -14,3 +14,5 @@ sqlalchemy
 flask-sqlalchemy
 flask-jWT-extended
 gunicorn
+passlib
+flask-migrate
