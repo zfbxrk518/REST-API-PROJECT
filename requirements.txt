@@ -7,12 +7,20 @@
 # python-dotenv
 # gunicorn
 
-flask
-flask-Smorest
-python-dotenv
-sqlalchemy
-flask-sqlalchemy
-flask-jWT-extended
-gunicorn
+# flask
+# flask-Smorest
+# python-dotenv
+# sqlalchemy
+# flask-sqlalchemy
+# flask-jWT-extended
+# gunicorn
+# passlib
+# flask-migrate
+Flask-JWT-Extended
+Flask-Smorest
+Flask-SQLAlchemy
 passlib
-flask-migrate
+marshmallow
+python-dotenv
+gunicorn
+Flask-Migrate
