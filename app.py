@@ -199,6 +199,12 @@ def create_app(db_url=None):
             401,
         )
 
+    # JWT configuration ends
+
+    with app.app_context():
+        import models  # noqa: F401
+
+        db.create_all()
 
     api.register_blueprint(UserBlueprint)
     api.register_blueprint(ItemBlueprint)
@@ -206,4 +212,3 @@ def create_app(db_url=None):
     api.register_blueprint(TagBlueprint)
 
     return app
-
