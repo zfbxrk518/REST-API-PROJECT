@@ -18,7 +18,7 @@ sk回来了我还是没有弄完,今天竟然忘记更新了，妈蛋
 
 开始刷题了，开心～～madanhaojitiandouwanglegengxinl 
 minghouliangtianyaokaishigaijianlile yihouyaobaochigithubshangde gengxin madanjintian youmeiyouxieaimagaijialin
-
+zabana zaijialiwanquanbuxiang gaijianli,zhejitianxuexizhuangtaiyebuhaoyemiyouduanlian
 
 Hi, when I replaced the project url "http://127.0.0.1:5000"in Insomnia with "https://rest-apis-flask-python-xhxb.onrender.com", there was an "Internal Server Error" in Insomnia. I tried it many times. With  "http://127.0.0.1:5000", the endpoints in Insomnia could work. But every time when I changed the url to "https://rest-apis-flask-python-xhxb.onrender.com", there would be an error. Can you help me to fix it? Thanks !
 
