@@ -16,3 +16,15 @@ Javascript can't split the code to different files so it needs a bundler, the mo
 
 Bootstrap is css framework.
 Js frontend uses XMLHttpRequest to send messages to url of backend. Nowadays we also use axios-http, fetchAPI to send messages.
+
+Backend saves and manages data.
+
+Programming language can turn a computer into a server and allow it to receive messages from the client. Popular programming language are js(also calls node.js), python, ruby and java. Any programming language need a backend framework and package manager to help it to work together.
+
+language        framework      package manager(install and manage packages)
+javascript      express         npm
+python          django          pip 
+ruby            ruby on rails   bundler
+java            java spring     maven
+
+Backend has backend server and database server. The most famous databases are mysql, postgres and mongodb.
