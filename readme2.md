@@ -50,3 +50,16 @@ app.get('/orders', (request, response) =>{
 post = create
 API + REST = REST API
 REST is the most common convention that we use for our APIs, there are other types like GraphQL and RPC.
+
+Infrastructures: companies rent computers from cloud computing companies, including:
+companies                         PaaS
+aws : amazon web services      Elastic Beanstalk
+gcp: google cloud platform     App Engine
+microsoft azure                App Service
+
+You rent a bunch of computers, a.k.a IaaS = Infrastructure as a Service.
+Small computer in the software calls virtual machine or VMs.
+Load Balancer
+ PaaS = Platform as a Service
+
+Microservices:
