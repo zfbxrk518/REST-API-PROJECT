@@ -28,3 +28,25 @@ ruby            ruby on rails   bundler
 java            java spring     maven
 
 Backend has backend server and database server. The most famous databases are mysql, postgres and mongodb.
+
+request: POST https://amazon.com/orders
+         Type         domain name/url path
+
+
+API(application programming interface): 
+the list of all the different types of requests that the backend allows, such as :
+
+app.post('/orders', (request, response) =>{
+    const order = createOrder(request);
+    database.save(order);
+    response.send('Order confirmed.');
+})
+app.get('/orders', (request, response) =>{
+    const order = database.getOrderHistory();
+    response.json(orders);
+})
+
+'POST /orders' is a naming covention for our requests, a.k.a REST(Representational State Transfer)
+post = create
+API + REST = REST API
+REST is the most common convention that we use for our APIs, there are other types like GraphQL and RPC.
