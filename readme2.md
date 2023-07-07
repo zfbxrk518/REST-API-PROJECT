@@ -65,7 +65,6 @@ PaaS = Platform as a Service
 Microservices: split the backend into several seperate backend, like orders backend, payments backend and email backend.
 twilio: email service. It's a Saas. When a company provides a backend and an API that outside applications can use is called Saas = Software as a Service.
 
-
 Cloud Computing: Iaas, PaaS, SaaS
 
 Additional Techonologies: 
