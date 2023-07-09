@@ -19,6 +19,7 @@ Js frontend uses XMLHttpRequest to send messages to url of backend. Nowadays we 
 
 Backend saves and manages data.
 
+
 Programming language can turn a computer into a server and allow it to receive messages from the client. Popular programming language are js(also calls node.js), python, ruby and java. Any programming language needs a backend framework and package manager to help it to work together.
 
 language        framework      package manager(install and manage packages)
