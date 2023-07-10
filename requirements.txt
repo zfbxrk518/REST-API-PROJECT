@@ -18,9 +18,11 @@
 # flask-migrate
 Flask-JWT-Extended
 Flask-Smorest
-Flask-SQLAlchemy
+Flask-sqlalchemy
+sqlalchemy
 passlib
 marshmallow
 python-dotenv
 gunicorn
 flask_migrate
+requests
